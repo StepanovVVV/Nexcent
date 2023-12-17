@@ -311,6 +311,12 @@ input[type=search]::-webkit-search-results-decoration {
   transition: all 0.3s ease 0s;
   opacity: 0.3;
 }
+.swiper-pagination-bullet:hover {
+  opacity: 0.7;
+}
+.swiper-pagination-bullet:active {
+  opacity: 1;
+}
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
@@ -737,10 +743,6 @@ body {
 
 .mt {
   margin-top: 1.6rem;
-}
-
-.none {
-  display: none !important;
 }
 
 .header {

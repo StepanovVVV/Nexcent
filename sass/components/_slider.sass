@@ -11,8 +11,6 @@
         display: flex
         justify-content: center
         align-items: center
-        // @include respond(big-phone)
-        //     height: 100vh
     &-slide 
         img 
             display: block
@@ -31,6 +29,10 @@
         background-color: $color-green
         transition: all .3s ease 0s
         opacity: .3
+        &:hover
+            opacity: .7
+        &:active
+            opacity: 1
 
     &-pagination-bullet-active
         opacity: 1
