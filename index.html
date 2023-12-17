@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Nexcent</title>
@@ -16,7 +17,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__container">
+            <div class="header__container" data-aos="fade-down">
                 <a href="#!" class="header__logo">
                     <img src="./icons/logo.svg" alt="Nexcent">
                 </a>
@@ -68,7 +69,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="home__slide block">
-                                    <div class="home__info block__item">
+                                    <div class="home__info block__item" data-aos="fade-right">
                                         <h2 class="block__title big-fs">
                                             Lessons and insights <span class="bright-headline">from 8 years</span>
                                         </h2>
@@ -77,7 +78,7 @@
                                         </p>
                                         <a href="#!" class="home__btn btn block__box">Register</a>
                                     </div>
-                                    <div class="home__img img">
+                                    <div class="home__img img" data-aos="fade-left">
                                         <img src="img/image-1.png" alt="image-1">
                                     </div>
                                 </div>
@@ -122,13 +123,14 @@
 
             <section class="clients">
                 <div class="clients__container">
-                    <div class="title">
+                    <div class="title" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
                         <h2>Our Clients</h2>
                         <p>We have been working with some Fortune 500+ clients</p>
                     </div>
                     <div class="clients__wrapper mt">
                         <div class="clients__ticker ticker">
-                            <div class="clients__box ticker__wrapper">
+                            <div class="clients__box ticker__wrapper" data-aos="zoom-in">
                                 <div class="ticker__items ticker__marquee">
                                     <div class="ticker__item">
                                         <img src="icons/Clients/client-1.svg" alt="client-1">
@@ -177,12 +179,13 @@
 
             <section class="community">
                 <div class="community__container">
-                    <div class="community__title title">
+                    <div class="community__title title" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
                         <h2>Manage your entire community in a single system</h2>
                         <p>Who is Nextcent suitable for?</p>
                     </div>
                     <div class="community__items mt">
-                        <div class="community__item">
+                        <div class="community__item" data-aos="flip-left">
                             <div class="community__icon">
                                 <img src="icons/people-1.svg" alt="people-1">
                             </div>
@@ -191,7 +194,7 @@
                                 Our membership management software provides full automation of membership renewals and payments
                             </p>
                         </div>
-                        <div class="community__item">
+                        <div class="community__item" data-aos="flip-left">
                             <div class="community__icon">
                                 <img src="icons/building.svg" alt="building">
                             </div>
@@ -200,7 +203,7 @@
                                 Our membership management software provides full automation of membership renewals and payments
                             </p>
                         </div>
-                        <div class="community__item">
+                        <div class="community__item" data-aos="flip-left">
                             <div class="community__icon">
                                 <img src="icons/hands.svg" alt="hands">
                             </div>
@@ -216,18 +219,18 @@
             <section class="pixelgrade section">
                 <div class="pixelgrade__container section__container block">
                     <div class="pixelgrade__item section__item block__item">
-                        <h2 class="pixelgrade__title block__title">
+                        <h2 class="pixelgrade__title block__title" data-aos="fade-left">
                             The unseen of spending three years at Pixelgrade
                         </h2>
-                        <p class="block__info">
+                        <p class="block__info" data-aos="fade-left">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed
                             accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta.
                             Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis
                             massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
                         </p>
-                        <a href="#!" class="pixelgrade__btn btn block__box">Learn More</a>
+                        <a href="#!" class="pixelgrade__btn btn block__box" data-aos="fade-left">Learn More</a>
                     </div>
-                    <div class="pixelgrade__img section__img">
+                    <div class="pixelgrade__img section__img" data-aos="fade-right">
                         <img src="img/image-2.png" alt="image-2">
                     </div>
                 </div>
@@ -236,7 +239,7 @@
             <section class="business">
                 <div class="business__container">
                     <div class="business__block block">
-                        <div class="block__item">
+                        <div class="block__item" data-aos="fade-right">
                             <h2 class="block__title">
                                 Helping a local <span class="bright-headline">business reinvent itself</span>
                             </h2>
@@ -246,7 +249,7 @@
                         </div>
                     </div>
                     <div class="business__items">
-                        <div class="business__item">
+                        <div class="business__item" data-aos="fade-left">
                             <div class="business__icon">
                                 <img src="icons/people-2.png" alt="people-2">
                             </div>
@@ -255,7 +258,7 @@
                                 <p>Members</p>
                             </div>
                         </div>
-                        <div class="business__item">
+                        <div class="business__item" data-aos="fade-left">
                             <div class="business__icon">
                                 <img src="icons/hands-2.png" alt="hands">
                             </div>
@@ -264,7 +267,7 @@
                                 <p>Clubs</p>
                             </div>
                         </div>
-                        <div class="business__item">
+                        <div class="business__item" data-aos="fade-left">
                             <div class="business__icon">
                                 <img src="icons/event.svg" alt="event">
                             </div>
@@ -273,7 +276,7 @@
                                 <p>Event Bookings</p>
                             </div>
                         </div>
-                        <div class="business__item">
+                        <div class="business__item" data-aos="fade-left">
                             <div class="business__icon">
                                 <img src="icons/payment.svg" alt="payment">
                             </div>
@@ -289,10 +292,10 @@
             <section class="pixelgrade section">
                 <div class="pixelgrade__container section__container block">
                     <div class="section__item block__item">
-                        <h2 class="pixelgrade__title block__title">
+                        <h2 class="pixelgrade__title block__title" data-aos="fade-left">
                             How to design your site footer like we did
                         </h2>
-                        <p class="block__info">
+                        <p class="block__info" data-aos="fade-left">
                             Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt
                             molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at
                             libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta
@@ -300,9 +303,9 @@
                             Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est,
                             finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.
                         </p>
-                        <a href="#!" class="pixelgrade__btn btn block__box">Learn More</a>
+                        <a href="#!" class="pixelgrade__btn btn block__box" data-aos="fade-left">Learn More</a>
                     </div>
-                    <div class="pixelgrade__img section__img">
+                    <div class="pixelgrade__img section__img" data-aos="fade-right">
                         <img src="img/image-3.png" alt="image-3">
                     </div>
                 </div>
@@ -311,7 +314,7 @@
             <section class="customers">
                 <div class="customers__container block">
                     <div class="customers__item block__item">
-                        <p class="customers__info block__info">
+                        <p class="customers__info block__info" data-aos="fade-left">
                             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum
                             risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam
                             in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula
@@ -321,11 +324,11 @@
                             odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus
                             ac sit amet magna.
                         </p>
-                        <p class="customers__box block__box mt">Tim Smith</p>
-                        <p class="customers__text">
+                        <p class="customers__box block__box mt" data-aos="fade-left">Tim Smith</p>
+                        <p class="customers__text" data-aos="fade-left">
                             British Dragon Boat Racing Association
                         </p>
-                        <div class="customers__partner ticker">
+                        <div class="customers__partner ticker" data-aos="fade-left">
                             <div class="customers__wrapper">
                                 <div class="customers__items ticker__items">
                                     <div class="customers__icon ticker__item">
@@ -353,7 +356,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="customers__img img">
+                    <div class="customers__img img" data-aos="fade-right">
                         <img src="img/image-4.jpg" alt="image-4">
                     </div>
                 </div>
@@ -361,7 +364,8 @@
 
             <section class="marketing">
                 <div class="marketing__container">
-                    <div class="marketing__title title">
+                    <div class="marketing__title title" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
                         <h2>Caring is the new marketing</h2>
                         <p>
                             The Nexcent blog is the best place to read about the latest membership insights, trends and
@@ -370,7 +374,7 @@
                         </p>
                     </div>
                     <div class="marketing__items mt">
-                        <div class="marketing__item">
+                        <div class="marketing__item" data-aos="flip-left">
                             <div class="marketing__img img">
                                 <img src="img/image-5.jpg" alt="image-5">
                             </div>
@@ -379,7 +383,7 @@
                                 <a href="#!" class="btn__wrapper">Readmore &nbsp; &#8594;</a>
                             </div>
                         </div>
-                        <div class="marketing__item">
+                        <div class="marketing__item" data-aos="flip-left">
                             <div class="marketing__img img">
                                 <img src="img/image-6.jpg" alt="image-6">
                             </div>
@@ -388,7 +392,7 @@
                                 <a href="#!" class="btn__wrapper">Readmore &nbsp; &#8594;</a>
                             </div>
                         </div>
-                        <div class="marketing__item">
+                        <div class="marketing__item" data-aos="flip-left">
                             <div class="marketing__img img">
                                 <img src="img/image-7.jpg" alt="image-7">
                             </div>
@@ -404,10 +408,10 @@
             <section class="suscipit">
                 <div class="suscipit__container block">
                     <div class="suscipit__info block__item">
-                        <h2 class="block__title big-fs">
+                        <h2 class="block__title big-fs" data-aos="zoom-in">
                             Pellentesque suscipit fringilla libero eu.
                         </h2>
-                        <a href="#!" class="suscipit__btn btn block__box">Get a Demo &nbsp; &#8594;</a>
+                        <a href="#!" class="suscipit__btn btn block__box" data-aos="zoom-in">Get a Demo &nbsp; &#8594;</a>
                     </div>
                 </div>
             </section>
@@ -415,7 +419,7 @@
         
         <footer class="footer">
             <div class="footer__container">
-                <div class="footer__box">
+                <div class="footer__box" data-aos="zoom-out-down">
                     <a href="#!" class="footer__logo">
                         <img src="icons/logo-2.svg" alt="Nexcent">
                     </a>
@@ -437,7 +441,7 @@
                     </div>
                 </div>
                 <div class="footer__items">
-                    <div class="footer__item">
+                    <div class="footer__item" data-aos="zoom-out-down">
                         <h3>Company</h3>
                         <a href="#!">About us</a>
                         <a href="#!">Blog</a>
@@ -445,7 +449,7 @@
                         <a href="#!">Pricing</a>
                         <a href="#!">Testimonials</a>
                     </div>
-                    <div class="footer__item">
+                    <div class="footer__item" data-aos="zoom-out-down">
                         <h3>Support</h3>
                         <a href="#!">Help center</a>
                         <a href="#!">Terms of service</a>
@@ -453,7 +457,7 @@
                         <a href="#!">Privacy policy</a>
                         <a href="#!">Status</a>
                     </div>
-                    <div class="footer__item footer__submit">
+                    <div class="footer__item footer__submit" data-aos="zoom-out-down">
                         <h3>Stay up to date</h3>
                         <form class="footer__form" action="#!">
                             <div>
@@ -472,6 +476,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 

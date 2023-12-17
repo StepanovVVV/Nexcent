@@ -18,3 +18,7 @@ menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 })
+
+AOS.init({
+    duration: 1200,
+});
